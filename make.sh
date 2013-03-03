@@ -1,0 +1,2 @@
+javac -cp ".:/home/gazal24/rmi/gazal1/xstream-1.3.1.jar:/home/gazal24/rmi/gazal1/xpp3-1.1.4c.jar:/home/gazal24/rmi/gazal1/xmlpull-1.1.3.1.jar:/home/gazal24/rmi/gazal1/rowset.jar" jdbcrmiConnection.java
+cp jdbcrmiConnection.class webp_rmi

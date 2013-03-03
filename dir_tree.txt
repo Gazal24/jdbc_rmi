@@ -1,0 +1,36 @@
+.
+|-- appconfig.java
+|-- config.properties
+|-- dir_tree.txt
+|-- jdbcrmiConnection.class
+|-- jdbcrmiConnection.java
+|-- jdbcrmiConnection.java~
+|-- jdbcrmi_impl.java
+|-- jdbcrmi_impl.java~
+|-- jdbcrmi.java
+|-- jdbcrmi.java~
+|-- make.sh
+|-- mysql-connector-java-5.1.21-bin.jar
+|-- policy.all
+|-- rowset.jar
+|-- server.java
+|-- webp_rmi
+|   |-- appconfig.class
+|   |-- jdbcrmi.class
+|   |-- jdbcrmiConnection.class
+|   |-- jdbcrmi_impl.class
+|   |-- server.class
+|   |-- xmlpull-1.1.3.1.jar
+|   |-- xpp3-1.1.4c.jar
+|   |-- xstream-1.3.1.jar
+|   |-- xstream-benchmark-1.3.1.jar
+|   |-- xstream-benchmark.jar
+|   `-- xstream.jar
+|-- xmlpull-1.1.3.1.jar
+|-- xpp3-1.1.4c.jar
+|-- xstream-1.3.1.jar
+|-- xstream-benchmark-1.3.1.jar
+|-- xstream-benchmark.jar
+`-- xstream.jar
+
+1 directory, 32 files
