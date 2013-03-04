@@ -33,7 +33,9 @@ public class jdbcrmiConnection
 		rs = stmt.executeQuery(query);		    
 		break;
 
-	    case 20:
+
+		// QUERIES FROM checklogin.jsp
+	    case 20: 
 		String uname = (String)paramList.get(0);
 		String passwd = (String)paramList.get(1);
 		query = "SELECT * from `proj1`.`user` where `uname` = '" + uname + "' AND `password` = '" + passwd + "'";
@@ -59,6 +61,34 @@ public class jdbcrmiConnection
 		query = "SELECT `uname` FROM `task` WHERE `id` = '"+ task_id +"'";
 		rs = stmt.executeQuery(query);
 		break;
+
+		// QUERIES FROM task.jsp
+	    case 30:
+		uname = (String)paramList.get(0);
+		query = "SELECT * from task WHERE uname = '" + uname +"'";
+		rs = stmt.executeQuery(query);
+		break;
+
+
+		// QUERIES FROM method.jsp
+	    case 40:
+		task_id = (String)paramList.get(0);
+		query = "Select * FROM task WHERE id=" + task_id;
+		rs = stmt.executeQuery(query);
+		break;
+
+	    case 41:
+		task_id = (String)paramList.get(0);
+		query = "SELECT * from `method` WHERE task_id=" + task_id;
+		rs = stmt.executeQuery(query);
+		break;
+
+	    case 42:
+		task_id = (String)paramList.get(0);
+		query = "SELECT * from `set` WHERE task_id=" + task_id;
+		rs = stmt.executeQuery(query);
+		break;
+
 	    }
 
 	    crs = new CachedRowSetImpl();
