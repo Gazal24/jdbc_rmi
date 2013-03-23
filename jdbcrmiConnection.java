@@ -235,8 +235,9 @@ public class jdbcrmiConnection
 		is_update_query = 1;
 		uname = (String) paramList.get(0);
 		String name =  (String) paramList.get(1);
-		passwd =  (String) paramList.get(2);
-		query = "INSERT INTO `user` (`uname`, `name`, `password`, `age`) VALUES ('" + uname + "', '" + name + "', '" + passwd + "', '22 ')" ;
+		email = (String) paramList.get(2);
+		passwd =  (String) paramList.get(3);
+		query = "INSERT INTO `user` (`uname`, `name`, `email`, `password`, `age`) VALUES ('" + uname + "', '" + name + "', '" + email + "', '" + passwd + "', '22 ')" ;
 		query_status = stmt.executeUpdate(query);
 
 	    } // END OF CASES
